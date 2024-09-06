@@ -1,8 +1,10 @@
+import { center, flex } from '../../styled-system/patterns';
+import {css} from '../../styled-system/css';
 import Link from 'next/link';
 
 export default function TagNav() {
     return(
-        <div>
+        <div className={center({m:"1.4rem"})}>
             <Link href="/web">#webサイト・アプリ</Link>
             <Link href="/graphic">#グラフィック</Link>
             <Link href="/web">#動画</Link>

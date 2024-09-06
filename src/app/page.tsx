@@ -29,29 +29,8 @@ export default function Home() {
         <div className={flex({justifyContent:"center", alignItems:"center", flexWrap:"wrap", gap:"3rem"})}>
           <div>
             <Link href={"#"}>
-            <p className={center({bg:"rgba(255, 252, 220, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/noname.svg" alt="" width={100} height={100}/></p>
-            <p>「no-name」</p>
-            <p>#1年生前期#個人制作</p>
-            </Link>
-          </div>
-          <div>
-            <Link href={"#"}>
             <p className={center({bg:"rgba(188, 205, 232, 0.40)",w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/sumeru-to.svg" alt="" width={150} height={150}/></p>
             <p>すめる〜と</p>
-            <p>#1年生後期#チーム制作</p>
-            </Link>
-          </div>
-          <div>
-            <Link href={"#"}>
-            <p className={center({bg:"rgba(255, 252, 220, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/cwc.svg" alt="" width={150} height={150}/></p>
-            <p>Connect with Chulhu </p>
-            <p>#1年生後期#個人制作</p>
-            </Link>
-          </div>
-          <div>
-            <Link href={"#"}>
-            <p className={center({bg:"rgba(29, 31, 76, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/obt.svg" alt="" width={210} height={210}/></p>
-            <p>ODDBALLTALK</p>
             <p>#1年生後期#チーム制作</p>
             </Link>
           </div>
@@ -69,7 +48,29 @@ export default function Home() {
             <p>#2年生前期#個人制作</p>
             </Link>
           </div>
+          <div>
+              <Link href={"#"}>
+              <p className={center({bg:"rgba(15, 18, 43, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/graphic/meisi.svg" alt="" width={150} height={150}/></p>
+              <p>名刺</p>
+              <p>#1年生#個人制作</p>
+              </Link>
+          </div>
+          <div>
+              <Link href={"#"}>
+              <p className={center({bg:"rgba(136, 77, 66, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/graphic/candle.svg" alt="" width={150} height={150}/></p>
+              <p>中崎町キャンドルナイト</p>
+              <p>#1年生後期#個人制作</p>
+              </Link>
+          </div>
+          <div>
+              <Link href={"#"}>
+              <p className={center({bg:"rgba(59, 152, 191, 0.40)",w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/graphic/goodmoningall.svg" alt="" width={150} height={150}/></p>
+              <p>キャラ紹介</p>
+              <p>#1年生~</p>
+              </Link>
+          </div>
         </div>
+        <Link href="/web" className={css({float:"right",bg:"rgba(216, 208, 227, 0.50)", p:"2px 10px", borderRadius:"10px"})}>See more</Link>
       </div>
       
         <h2 className={center({m:"10rem 0 3rem",fontSize:"2rem"})}>Contact</h2>
