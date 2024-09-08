@@ -2,11 +2,15 @@ import { css } from '../../styled-system/css';
 import { center, flex } from '../../styled-system/patterns';
 import Image from 'next/image';
 import Link from 'next/link';
- 
+
+import { FaForward } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
+
 export default function Home() {
   return (
     <div className={css({bg: "linear-gradient(180deg, #7084A5 0%, #ABA6BE 57%, #D4B0B5 100%)", color:"#fff", p:"0 240px"})}>
-
+      <div className={css({p:"0", position:"absolute", zIndex:"-0.5"})}><Image src="/img/cloud.svg" alt='' width={600} height={600}/></div>
       <div className={css({ fontSize: "20rem", fontWeight: 'bold' })}>Portfolio</div>
       <div>
         <h2 className={center({m:"10rem 0 3rem",fontSize:"2rem"})}>Profile</h2>
@@ -70,13 +74,21 @@ export default function Home() {
               </Link>
           </div>
         </div>
-        <Link href="/web" className={css({float:"right",bg:"rgba(216, 208, 227, 0.50)", p:"2px 10px", borderRadius:"10px"})}>See more</Link>
+        <div>
+
+          <Link href="/web" className={flex({float:"right",alignItems:"center",gap:"5px", bg:"rgba(216, 208, 227, 0.50)", p:"2px 10px", borderRadius:"10px"})}>See more<FaForward /></Link>
+          
+        </div>
       </div>
       
         <h2 className={center({m:"10rem 0 3rem",fontSize:"2rem"})}>Contact</h2>
       <div className={center({})}>
         <p>morio.yuna01@gmail.com</p>
       </div>
+        <div className={flex({justifyContent:"center",gap:"1rem",p:"1rem 0" ,fontSize:"2.4rem"})}>
+          <IoLogoGithub />
+          <FaXTwitter />
+        </div>
 
     </div>
   )
