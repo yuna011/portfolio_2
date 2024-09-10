@@ -1,1 +1,15 @@
 @layer reset, base, tokens, recipes, utilities;
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-size: 1.4rem;
+  background: url(/img/bg.svg) ,linear-gradient(180deg, #7084A5 0%, #ABA6BE 57%, #D4B0B5 100% );
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 14rem;
+  color: #fff;
+}

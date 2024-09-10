@@ -3,11 +3,13 @@ import { center, flex } from '../../../styled-system/patterns';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Nav from '@/components/nav';
 import TagNav from '@/components/tagNav';
 
 export default function graphic() {
     return(
-        <div className={css({bg: "linear-gradient(180deg, #7084A5 0%, #ABA6BE 57%, #D4B0B5 100%)", color:"#fff", p:"4rem 240px" , h:"100vh"})}>
+        <div className={css({h:"100vh", pt:"5rem"})}>
+            <Nav />
                 <h2 className={center({fontSize:"2rem"})}>Graphic</h2>
                 <TagNav />
                 <div className={flex({justifyContent:"center", alignItems:"center", flexWrap:"wrap", gap:"3rem",m:"2rem 0"})}>

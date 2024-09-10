@@ -1,5 +1,6 @@
 import { css } from '../../styled-system/css';
 import { center, flex } from '../../styled-system/patterns';
+import Nav from '@/components/nav';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,21 +8,29 @@ import { FaForward } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 
+
 export default function Home() {
   return (
-    <div className={css({bg: "linear-gradient(180deg, #7084A5 0%, #ABA6BE 57%, #D4B0B5 100%)", color:"#fff", p:"0 240px"})}>
-      <div className={css({p:"0", position:"absolute", zIndex:"-0.5"})}><Image src="/img/cloud.svg" alt='' width={600} height={600}/></div>
-      <div className={css({ fontSize: "20rem", fontWeight: 'bold' })}>Portfolio</div>
+    <div className={flex({flexDirection:"column", gap:"20rem"})}>
+
+      <div className={css({flexDirection:"column",pt:"5rem"})}>
+        <Nav />
+        <div className={flex({justifyContent:"space-between", mt:"8rem"})}>
+          <h1 className={css({fontSize: "10rem", fontWeight: 'bold'})}>Portfolio</h1>
+          <Image src="/img/moon.svg" alt='' width={500} height={500} className={css({mixBlendMode:"luminosity"})}/>
+        </div>
+      </div>
+
       <div>
-        <h2 className={center({m:"10rem 0 3rem",fontSize:"2rem"})}>Profile</h2>
-        <div className={flex({justifyContent:"center", alignItems:"center", gap:"8rem"})}>
+        <h2 className={center({mb:"3rem",fontSize:"2rem"})}>Profile</h2>
+        <div className={flex({justifyContent:"center", alignItems:"center", gap:"4rem"})}>
           <div>
-            <p className={center({fontSize:"1.2rem"})}>もりお　ゆうな</p>
-            <p className={css({fontSize:"4rem", fontWeight:"bold"})}>森尾　優菜</p>
+            <p className={center({})}>もりお　ゆうな</p>
+            <p className={css({fontSize:"3.2rem", fontWeight:"bold"})}>森尾　優菜</p>
           </div>
           <div className={css({lineHeight:"2rem"})}>
             <p>ECCコンピュータ専門学校/マルチメディア研究学科/Webデザインコース/26年卒業予定</p>
-            <p>2004/11/10/兵庫県出身</p>
+            <p>2004/11.10/兵庫県出身</p>
             <p>好きなものはボカロとゲーム🎮</p>
             <p>日常を少しおもしろくしたいを原動力に日々勉強中</p>
           </div>
@@ -29,7 +38,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className={center({m:"10rem 0 3rem",fontSize:"2rem"})}>Work</h2>
+        <h2 className={center({mb:"3rem",fontSize:"2rem"})}>Work</h2>
         <div className={flex({justifyContent:"center", alignItems:"center", flexWrap:"wrap", gap:"3rem"})}>
           <div>
             <Link href={"#"}>
@@ -75,20 +84,20 @@ export default function Home() {
           </div>
         </div>
         <div>
-
           <Link href="/web" className={flex({float:"right",alignItems:"center",gap:"5px", bg:"rgba(216, 208, 227, 0.50)", p:"2px 10px", borderRadius:"10px"})}>See more<FaForward /></Link>
-          
         </div>
       </div>
-      
-        <h2 className={center({m:"10rem 0 3rem",fontSize:"2rem"})}>Contact</h2>
-      <div className={center({})}>
-        <p>morio.yuna01@gmail.com</p>
-      </div>
-        <div className={flex({justifyContent:"center",gap:"1rem",p:"1rem 0" ,fontSize:"2.4rem"})}>
+
+      <div>
+        <h2 className={center({mb:"3rem",fontSize:"2rem"})}>Contact</h2>
+        <div className={center({})}>
+          <p>morio.yuna01@gmail.com</p>
+        </div>
+        <div className={flex({justifyContent:"center",gap:"1rem",p:"2rem 0" ,fontSize:"3rem"})}>
           <IoLogoGithub />
           <FaXTwitter />
         </div>
+      </div>
 
     </div>
   )
