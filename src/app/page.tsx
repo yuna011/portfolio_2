@@ -41,43 +41,43 @@ export default function Home() {
         <h2 className={center({mb:"3rem",fontSize:"2rem"})}>Work</h2>
         <div className={flex({justifyContent:"center", alignItems:"center", flexWrap:"wrap", gap:"3rem"})}>
           <div>
-            <Link href={"#"}>
-            <p className={center({bg:"rgba(188, 205, 232, 0.40)",w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/sumeru-to.svg" alt="" width={150} height={150}/></p>
+            <Link href={"/sumeruto"}>
+            <p className={center({bg:"rgba(188, 205, 232, 0.40)",w:"31rem", h:"22rem", borderRadius:"10px"})}><Image src="/img/sumeru-to.svg" alt="" width={150} height={150}/></p>
             <p>すめる〜と</p>
             <p>#1年生後期#チーム制作</p>
             </Link>
           </div>
           <div>
-            <Link href={"#"}>
-            <p className={center({bg:"rgba(152, 19, 51, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/.svg" alt="" width={100} height={100}/></p>
+            <Link href={"/rekiteku"}>
+            <p className={center({bg:"rgba(152, 19, 51, 0.40)", w:"31rem", h:"22rem", borderRadius:"10px"})}><Image src="/img/.svg" alt="" width={100} height={100}/></p>
             <p>歴てく</p>
             <p>#2年生前期#チーム制作</p>
             </Link>
           </div>
           <div>
-            <Link href={"#"}>
-            <p className={center({bg:"rgba(142, 172, 202, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/dekita.svg" alt="" width={200} height={200}/></p>
+            <Link href={"/dekitanote"}>
+            <p className={center({bg:"rgba(142, 172, 202, 0.40)", w:"31rem", h:"22rem", borderRadius:"10px"})}><Image src="/img/dekita.svg" alt="" width={200} height={200}/></p>
             <p>できた！ノート</p>
             <p>#2年生前期#個人制作</p>
             </Link>
           </div>
           <div>
-              <Link href={"#"}>
-              <p className={center({bg:"rgba(15, 18, 43, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/graphic/meisi.svg" alt="" width={150} height={150}/></p>
+              <Link href={"/meisi"}>
+              <p className={center({bg:"rgba(15, 18, 43, 0.40)", w:"31rem", h:"22rem", borderRadius:"10px"})}><Image src="/img/graphic/meisi.svg" alt="" width={150} height={150}/></p>
               <p>名刺</p>
               <p>#1年生#個人制作</p>
               </Link>
           </div>
           <div>
-              <Link href={"#"}>
-              <p className={center({bg:"rgba(136, 77, 66, 0.40)", w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/graphic/candle.svg" alt="" width={150} height={150}/></p>
+              <Link href={"/candle"}>
+              <p className={center({bg:"rgba(136, 77, 66, 0.40)", w:"31rem", h:"22rem", borderRadius:"10px"})}><Image src="/img/graphic/candle.svg" alt="" width={140} height={140}/></p>
               <p>中崎町キャンドルナイト</p>
               <p>#1年生後期#個人制作</p>
               </Link>
           </div>
           <div>
-              <Link href={"#"}>
-              <p className={center({bg:"rgba(59, 152, 191, 0.40)",w:"312px", h:"250px", borderRadius:"10px"})}><Image src="/img/graphic/goodmoningall.svg" alt="" width={150} height={150}/></p>
+              <Link href={"character"}>
+              <p className={center({bg:"rgba(59, 152, 191, 0.40)",w:"31rem", h:"22rem", borderRadius:"10px"})}><Image src="/img/graphic/goodmoningall.svg" alt="" width={140} height={140}/></p>
               <p>キャラ紹介</p>
               <p>#1年生~</p>
               </Link>
