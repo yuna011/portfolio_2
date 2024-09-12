@@ -15,9 +15,12 @@ export default function Home() {
 
       <div className={css({flexDirection:"column",pt:"5rem"})}>
         <Nav />
-        <div className={flex({justifyContent:"space-between", mt:"8rem"})}>
-          <h1 className={css({fontSize: "10rem", fontWeight: 'bold'})}>Portfolio</h1>
-          <Image src="/img/moon.svg" alt='' width={500} height={500} className={css({mixBlendMode:"luminosity"})}/>
+        <div className={flex({justifyContent:"space-between", alignItems:"end",mt:"8rem"})}>
+          <div  className={css({fontSize: "12rem", fontWeight: 'bold', color:"#1E4062"})}>
+            <p>もりお ゆうなの</p>
+            <p>Portfolio</p>
+          </div>
+          <Image src="/img/moon.svg" alt='' width={600} height={600} className={css({mixBlendMode:"luminosity"})}/>
         </div>
       </div>
 
@@ -26,9 +29,9 @@ export default function Home() {
         <div className={flex({justifyContent:"center", alignItems:"center", gap:"4rem"})}>
           <div>
             <p className={center({})}>もりお　ゆうな</p>
-            <p className={css({fontSize:"3.2rem", fontWeight:"bold"})}>森尾　優菜</p>
+            <p className={css({fontSize:"4rem", fontWeight:"bold"})}>森尾　優菜</p>
           </div>
-          <div className={css({lineHeight:"2rem"})}>
+          <div className={css({lineHeight:"2.4rem"})}>
             <p>ECCコンピュータ専門学校/マルチメディア研究学科/Webデザインコース/26年卒業予定</p>
             <p>2004/11.10/兵庫県出身</p>
             <p>好きなものはボカロとゲーム🎮</p>

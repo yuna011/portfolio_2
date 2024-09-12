@@ -7,7 +7,7 @@ export default function TagNav() {
         <div className={center({m:"1.4rem"})}>
             <Link href="/web">#webサイト・アプリ</Link>
             <Link href="/graphic">#グラフィック</Link>
-            <Link href="/web">#動画</Link>
+            <Link href="/movie">#動画</Link>
         </div>
     )
 }
